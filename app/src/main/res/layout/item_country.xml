@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="16dp"
+    android:layout_marginTop="-200dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/team_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Team"
+            android:textColor="#d4244a"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rank1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Rank:"
+            android:textColor="#3ac27e"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/gold_pic"
+            app:layout_constraintEnd_toStartOf="@+id/team_text" />
+
+        <TextView
+            android:id="@+id/rank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Rank2"
+            android:textColor="#3ac27e"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rank1"
+            app:layout_constraintStart_toEndOf="@+id/team_text"
+            app:layout_constraintTop_toTopOf="@+id/rank1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/gold_pic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/silver_image"
+            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <ImageView
+            android:id="@+id/silver_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="56dp"
+            android:src="@drawable/silver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bronze_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502" />
+
+        <ImageView
+            android:id="@+id/bronze_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="84dp"
+            android:background="@color/white"
+            android:src="@drawable/bronze"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rank2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/gold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="gold"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/gold_pic"
+            app:layout_constraintStart_toStartOf="@+id/gold_pic"
+            app:layout_constraintTop_toBottomOf="@+id/silver_image" />
+
+        <TextView
+            android:id="@+id/silver_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="silver"
+            app:layout_constraintEnd_toEndOf="@+id/silver_image"
+            app:layout_constraintStart_toStartOf="@+id/silver_image"
+            app:layout_constraintTop_toBottomOf="@+id/bronze_image" />
+
+        <TextView
+            android:id="@+id/bronze_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="bronz"
+            app:layout_constraintEnd_toEndOf="@+id/bronze_image"
+            app:layout_constraintStart_toStartOf="@+id/bronze_image"
+            app:layout_constraintTop_toBottomOf="@+id/silver_image" />
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp"
+            android:text="Total"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/total_number"
+            app:layout_constraintTop_toTopOf="@+id/total_number"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginBottom="16dp"
+            android:text="Total:"
+            android:textColor="#c9d134"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
