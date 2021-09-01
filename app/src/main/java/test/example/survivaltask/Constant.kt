@@ -1,6 +1,6 @@
 package test.example.survivaltask
 
-object constant {
+object Constant {
     object columIndex{
         const val RANK=0
         const val TEAM_NOC =1
